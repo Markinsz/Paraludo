@@ -1,0 +1,883 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+
+h2 {
+    font-family: "Silkscreen", sans-serif;
+}
+
+span {
+    color: white;
+    font-family: "Silkscreen";
+    font-size: 24px;
+    text-align: center;
+
+    margin-bottom: 40px;
+    width: 430px;
+
+}
+
+.container-grid {
+    width: 80%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+header {
+    height: 150px;
+    width: 100%;
+    background-color: #242C37;
+    position: fixed;
+
+    z-index: 1;
+    top: 0;
+
+    transition: 200ms;
+}
+
+header a {
+    text-decoration: underline transparent;
+    color: white;
+    font-family: "Silkscreen";
+
+    font-size: 20px;
+    width: 120px;
+
+    transition: text-decoration-color 300ms ease;
+}
+
+header a:hover {
+    text-decoration-color: white;
+}
+
+header img {
+    width: 90px;
+}
+
+header div.container-grid {
+    height: 100%;
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header button {
+    background-color: unset;
+    border: none;
+
+    width: 25%;
+
+    cursor: pointer;
+    transition: content 500ms ease;
+}
+
+header button img:hover {
+    content: url(img/FullTema.png);
+}
+
+#Logo {
+    width: 310px;
+    margin: 5%;
+}
+
+.menu {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+}
+
+.menu p {
+    width: 120.75px;
+    height: fit-content;
+}
+
+#invisible {
+    height: 150px;
+}
+
+#menu {
+    display: none;
+}
+
+#options {
+    color: white;
+
+    display: none;
+}
+
+#Banner {
+
+    height: 72%;
+
+    background-color: #480B1C;
+    background-image: linear-gradient(90deg, rgb(72, 11, 28) 0%, rgba(72, 11, 28, 0.8) 30%, rgba(72, 11, 28, 0.5) 50%, rgba(72, 11, 28, 0.3) 100%), url(img/Banner.gif);
+    background-repeat: no-repeat;
+    background-position: 155% 20%;
+    background-size: 1400px;
+
+
+    display: flex;
+    justify-content: left;
+}
+
+#Banner p {
+    color: white;
+    font-family: "Montserrat";
+    width: 550px;
+    text-align: center;
+
+    margin-bottom: 20px;
+
+}
+
+#Wizz {
+    width: 364px;
+    margin-bottom: 20px;
+}
+
+#Banner button {
+    border-radius: 13px;
+    border: none;
+    background-color: #242C37;
+
+    color: white;
+    font-family: "Silkscreen";
+    font-size: 23px;
+
+    width: 167px;
+    height: 56px;
+
+    display: flex;
+    align-items: center;
+
+    margin: 0px 180px;
+    padding: 10px;
+
+    transition: background-color 500ms;
+    cursor: pointer;
+}
+
+#Banner button:hover {
+    background-color: #131921;
+}
+
+#Banner button img {
+    padding-right: 10px;
+}
+
+#Banner .container-grid {
+    margin: 60px 1000px 0px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#Sobre {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 61px;
+    margin-top: 61px;
+}
+
+#Sobre h2 {
+    margin-bottom: 61px;
+}
+
+#Cases {
+    background-color: #242C37;
+
+    color: white;
+    text-align: center;
+
+    padding-bottom: 73px;
+}
+
+#Cases .container-grid {
+    margin: auto;
+}
+
+#Cases h2 {
+    padding-top: 51px;
+    margin-bottom: 83px;
+}
+
+#Cases img {
+    width: 46.5%;
+
+    transition: transform 300ms;
+}
+
+#Cases img:hover {
+    transform: scale(1.05)
+}
+
+#WTTT {
+    display: flex;
+    align-content: space-between;
+}
+
+#WTTT p {
+    width: 600px;
+    margin-top: 70px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#KBS {
+    display: flex;
+    align-content: space-between;
+}
+
+#KBS p {
+    width: 600px;
+    margin-top: 70px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+#DOTML {
+    display: flex;
+    align-content: space-between;
+}
+
+#DOTML p {
+    width: 600px;
+    margin-top: 70px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#Contato {
+    background-image: linear-gradient(rgb(17, 9, 48) 0%, rgba(17, 9, 48, 0.15) 100%), url(img/BG_contato.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    height: 1150px;
+
+    color: white;
+    text-align: center;
+
+    padding-top: 95px;
+}
+
+#Contato h2 {
+    margin-bottom: 45px;
+}
+
+#Contato p {
+    margin-bottom: 55px;
+}
+
+#Contato .container-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 1120px;
+}
+
+#Contato form {
+    background-color: #480B1C;
+
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 60px 0;
+
+    border-radius: 13px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Montserrat';
+    color: white;
+}
+
+#Contato span {
+    display: flex;
+    align-items: start;
+
+    margin-bottom: 10px;
+    width: auto;
+}
+
+#Contato button {
+    border-radius: 13px;
+    border: none;
+    background-color: #242C37;
+
+    color: white;
+    font-family: "Silkscreen";
+    font-size: 23px;
+
+    width: 267px;
+    height: 56px;
+
+    display: flex;
+    align-items: center;
+
+    margin: 0px 180px;
+    padding-left: 84px;
+
+    transition: background-color 500ms;
+    cursor: pointer;
+}
+
+#Contato button:hover {
+    background-color: #131921;
+}
+
+.campo {
+    width: 85%;
+
+    margin-bottom: 50px;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.campo_textarea {
+    width: 85%;
+
+    margin-bottom: 30px;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.campo_textarea textarea {
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 17px;
+
+    background-color: #370413;
+
+    border: none;
+    outline: none;
+    border-radius: 13px;
+    resize: none;
+
+    padding: 10px;
+    height: 200px;
+}
+
+.campo input {
+    height: 40px;
+
+    color: white;
+    background-color: #370413;
+
+    border: none;
+    border-radius: 13px;
+
+    outline: none;
+
+    text-indent: 10px;
+    font-family: 'Montserrat';
+    font-size: 17px;
+}
+
+.campo input:focus,
+.campo_textarea textarea:focus {
+    outline: 2px solid white;
+}
+
+footer {
+    background-color: #242C37;
+
+    height: 350px;
+    color: white;
+}
+
+footer a {
+    color: white;
+
+    transition: color 300ms;
+}
+
+footer a:hover {
+    color: #3449BF;
+}
+
+footer img {
+    width: 10%;
+}
+
+footer .container-grid {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#redes_sociais {
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#icones {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#DB {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+
+    width: 50px;
+    height: 410px;
+
+    top: 0;
+    right: 0;
+
+    object-fit: cover;
+    overflow: visible;
+
+    margin-bottom: 59px;
+    margin-left: 300px;
+}
+
+@media screen and (max-width: 1600px) {
+    #Banner {
+        background-image: linear-gradient(rgba(72, 11, 28, 0.4) 0%, rgba(72, 11, 28, 0.5) 10%, rgba(72, 11, 28, 0.7) 20%, rgb(72, 11, 28) 50%, rgb(72, 11, 28) 100%), url(img/BannerCell.gif);
+        background-position: top;
+        background-size: 100%;
+
+        flex-direction: column;
+
+        height: 175%;
+    }
+
+    #Banner .container-grid {
+        margin-left: 10%;
+        margin-top: 40%;
+    }
+
+    #WTTT,
+    #DOTML {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-bottom: 105px;
+    }
+
+    #KBS {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        margin-bottom: 105px;
+    }
+
+    #redes_sociais {
+        margin-right: 10%;
+    }
+
+    footer {
+        height: 30%;
+    }
+
+    #DB {
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #menu {
+        display: unset;
+    }
+
+    #options {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        padding: 0px 30px;
+
+        height: 500px;
+        width: 350px;
+
+        margin-top: 350px;
+
+        background-color: #000000f0;
+    }
+
+    nav.menu {
+        display: none;
+    }
+
+    header button img {
+        display: none;
+    }
+
+    #Banner {
+        height: 170%;
+    }
+
+    #Banner button {
+        position: relative;
+    }
+
+    #Banner .container-grid {
+        margin-top: 60vh;
+        justify-content: flex-end;
+    }
+
+    footer {
+        height: 20%;
+    }
+
+    footer span {
+        padding: 30px;
+        font-size: 16px;
+    }
+
+    footer svg {
+        width: 60%;
+        margin-left: 70px;
+    }
+
+    #redes_sociais {
+        height: 50%;
+        margin-bottom: 30px;
+        display: unset;
+        margin-left: 30px;
+    }
+
+    #icones {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        width: 50%;
+    }
+
+    #DB {
+        height: 175px;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    h2 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    span {
+        font-size: 12px;
+    }
+
+    #options a {
+        font-size: 12px;
+    }
+
+    header {
+        height: 20%;
+    }
+
+    header svg:last-child {
+        width: 40%;
+    }
+
+    #Logo {
+        width: 30%;
+    }
+
+    #invisible {
+        height: 19%;
+    }
+
+    #Banner {
+        height: 150%;
+    }
+
+    #Banner img {
+        width: 175;
+    }
+
+    #Banner button {
+        width: 100px;
+        height: 32px;
+
+        font-size: 12px;
+    }
+
+    #Banner button img {
+        width: 40px;
+    }
+
+    #Banner .container-grid {
+        margin-top: 70vh;
+        justify-content: flex-end;
+    }
+
+    #Cases img {
+        width: 75%;
+
+        transition: transform 300ms;
+    }
+
+    #WTTT p {
+        width: 75%;
+        margin-top: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    #KBS p {
+        width: 75%;
+        margin-top: 20px;
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    #DOTML p {
+        width: 75%;
+        margin-top: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    #Contato {
+        height: 950px;
+    }
+
+    #Contato button {
+        width: 100px;
+        height: 32px;
+
+        font-size: 12px;
+
+        padding-left: 25px;
+    }
+
+    .campo input {
+        height: 35px;
+    }
+
+    .campo input::placeholder {
+        font-size: 12px;
+    }
+
+    .campo_textarea textarea {
+        height: 100px;
+    }
+
+    .campo_textarea textarea::placeholder {
+        font-size: 12px;
+    }
+
+    footer {
+        height: 27%;
+    }
+
+    footer span {
+        padding: 30px;
+        margin-left: 30px;
+        font-size: 12px;
+    }
+
+    footer svg {
+        width: 45%;
+        margin-left: 70px;
+        margin-bottom: 0;
+    }
+
+    #redes_sociais {
+        height: 50%;
+        display: unset;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+
+    #icones {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        width: 50%;
+    }
+
+    #DB {
+        height: 200px;
+        margin-bottom: 65px;
+        margin-left: 200px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    header {
+        width: 100%;
+    }
+
+    header svg:last-child {
+        width: 150%;
+    }
+
+    #Logo {
+        width: 40%;
+    }
+
+    #Banner {
+        height: 90%;
+    }
+
+    #Banner p {
+        width: 100%;
+    }
+
+    #Banner .container-grid {
+        margin-top: 60%;
+    }
+
+    #Cases {
+        height: 175%;
+    }
+
+    footer {
+        height: 700px;
+    }
+
+    footer .container-grid {
+        padding-top: 10%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    footer span {
+        display: none;
+    }
+
+    footer svg {
+        width: 100px;
+        height: 90px;
+
+        margin-bottom: 30%;
+    }
+
+    #favicon {
+        width: 150px;
+    }
+
+    #icones {
+        width: 80%;
+
+        margin-left: 25px;
+
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    #DB {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #Banner {
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container-grid {
+        max-width: 300px;
+    }
+
+    header svg:first-child {
+        display: none;
+    }
+
+    header svg:last-child {
+        width: 50px;
+    }
+
+    #Banner span {
+        width: 100%;
+    }
+
+    #options {
+        position: absolute;
+        padding: 10px;
+    }
+
+    #Banner {
+        height: 650px;
+    }
+
+    #Banner .container-grid {
+        margin: unset;
+        margin-top: 240px;
+        margin-left: 30px;
+    }
+
+    #Cases {
+        height: 230%;
+    }
+
+    footer {
+        height: 450px;
+    }
+
+    footer a:first-child {
+        margin-left: 0px;
+    }
+
+    footer svg {
+        width: 50px;
+        height: 40px;
+        margin-left: 50px;
+    }
+
+    #redes-sociais {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #icones {
+        display: contents;
+    }
+}

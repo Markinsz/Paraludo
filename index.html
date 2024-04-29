@@ -1,0 +1,262 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="#">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Paraludo</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-grid">
+            <svg width="91" height="89" viewBox="0 0 91 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M69.221 10.716C65.3751 10.2037 60.3056 10.1978 53.1699 10.1978C51.6199 10.1978 50.3633 8.95253 50.3633 7.41651C50.3633 5.88048 51.6199 4.63526 53.1699 4.63526H53.381C60.2584 4.63518 65.7056 4.63514 69.9687 5.20315C74.3564 5.78766 77.9074 7.01927 80.7081 9.79444C83.2692 12.3326 84.6681 14.7466 85.3244 18.4747C85.9146 21.826 85.9146 26.3457 85.9142 33.0177V33.3748C85.9142 34.9109 84.6576 36.1561 83.1076 36.1561C81.5575 36.1561 80.3009 34.9109 80.3009 33.3748C80.3009 26.2582 80.2901 22.2446 79.7946 19.4309C79.3553 16.9345 78.5615 15.5342 76.7387 13.7277C75.155 12.1583 72.9856 11.2177 69.221 10.716Z"
+                    fill="transparent" />
+                <path
+                    d="M11.0704 55.625C11.0704 54.089 9.81379 52.8438 8.26373 52.8438C6.71363 52.8438 5.45708 54.089 5.45708 55.625L5.45704 55.9821C5.45685 62.6541 5.45674 67.1739 6.04688 70.5251C6.70334 74.2531 8.10206 76.6672 10.6634 79.2056C13.4639 81.9805 17.0151 83.212 21.4025 83.7968C25.6657 84.3646 31.113 84.3646 37.9902 84.3646H38.2013C39.7513 84.3646 41.008 83.1193 41.008 81.5833C41.008 80.0473 39.7513 78.8021 38.2013 78.8021C31.0656 78.8021 25.9962 78.7962 22.1504 78.2837C18.3855 77.7823 16.2163 76.8415 14.6326 75.2721C12.8096 73.4658 12.0162 72.0652 11.5766 69.5691C11.0812 66.7552 11.0704 62.7417 11.0704 55.625Z"
+                    fill="transparent" />
+                <path
+                    d="M85.9142 55.625C85.9142 54.089 84.6576 52.8438 83.1076 52.8438C81.5575 52.8438 80.3009 54.089 80.3009 55.625C80.3009 62.7417 80.2901 66.7552 79.7946 69.5691C79.3553 72.0652 78.5615 73.4658 76.7387 75.2721C75.155 76.8415 72.9856 77.7823 69.221 78.2837C65.3751 78.7962 60.3056 78.8021 53.1699 78.8021C51.6199 78.8021 50.3633 80.0473 50.3633 81.5833C50.3633 83.1193 51.6199 84.3646 53.1699 84.3646H53.381C60.2584 84.3646 65.7056 84.3646 69.9687 83.7968C74.3564 83.212 77.9074 81.9805 80.7081 79.2056C83.2692 76.6672 84.6681 74.2531 85.3244 70.5251C85.9146 67.1739 85.9146 62.6541 85.9142 55.9821V55.625Z"
+                    fill="transaparent" />
+                <path
+                    d="M38.2013 4.63526H37.9902C31.113 4.63518 25.6656 4.63514 21.4025 5.20315C17.0151 5.78766 13.4639 7.01927 10.6634 9.79444C8.10206 12.3326 6.70334 14.7466 6.04688 18.4747C5.45674 21.826 5.45685 26.3456 5.45704 33.0175L5.45708 33.3748C5.45708 34.9109 6.71363 36.1561 8.26373 36.1561C9.81379 36.1561 11.0704 34.9109 11.0704 33.3748C11.0704 26.2582 11.0812 22.2446 11.5766 19.4309C12.0162 16.9345 12.8096 15.5342 14.6326 13.7277C16.2163 12.1583 18.3855 11.2177 22.1504 10.716C25.9962 10.2037 31.0656 10.1978 38.2013 10.1978C39.7513 10.1978 41.008 8.95253 41.008 7.41651C41.008 5.88048 39.7513 4.63526 38.2013 4.63526Z"
+                    fill="transparent" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M45.6856 34.3022C40.0019 34.3022 35.3945 38.8679 35.3945 44.5002C35.3945 50.1324 40.0019 54.6981 45.6856 54.6981C51.3692 54.6981 55.9766 50.1324 55.9766 44.5002C55.9766 38.8679 51.3692 34.3022 45.6856 34.3022ZM41.0078 44.5002C41.0078 41.9399 43.1019 39.8647 45.6856 39.8647C48.2692 39.8647 50.3633 41.9399 50.3633 44.5002C50.3633 47.0604 48.2692 49.1356 45.6856 49.1356C43.1019 49.1356 41.0078 47.0604 41.0078 44.5002Z"
+                    fill="transparent" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M20.7041 35.0457C25.4566 29.5829 33.6222 23.1772 45.6856 23.1772C57.749 23.1772 65.9149 29.5829 70.6671 35.0457L70.788 35.1845C71.8021 36.3493 72.8451 37.547 73.5617 38.9825C74.3629 40.5871 74.6877 42.31 74.6877 44.5002C74.6877 46.6903 74.3629 48.4132 73.5617 50.0178C72.8451 51.4533 71.8021 52.6511 70.788 53.8159L70.6671 53.9546C65.9149 59.4173 57.749 65.8231 45.6856 65.8231C33.6222 65.8231 25.4566 59.4173 20.7041 53.9546L20.5833 53.8159C19.5692 52.6511 18.5262 51.4533 17.8096 50.0178C17.0082 48.4132 16.6836 46.6903 16.6836 44.5002C16.6836 42.31 17.0082 40.5871 17.8096 38.9825C18.5263 37.547 19.5691 36.3493 20.5833 35.1845L20.7041 35.0457ZM45.6856 28.7397C35.8399 28.7397 29.0943 33.9205 24.9556 38.6777C23.7807 40.0283 23.2088 40.7121 22.8407 41.4493C22.5288 42.0738 22.2969 42.8907 22.2969 44.5002C22.2969 46.1096 22.5288 46.9265 22.8407 47.551C23.2088 48.2882 23.7807 48.972 24.9556 50.3226C29.0943 55.0797 35.8399 60.2606 45.6856 60.2606C55.5314 60.2606 62.2771 55.0797 66.4156 50.3226C67.5906 48.972 68.1624 48.2882 68.5307 47.551C68.8424 46.9265 69.0744 46.1096 69.0744 44.5002C69.0744 42.8907 68.8424 42.0738 68.5307 41.4493C68.1624 40.7121 67.5906 40.0283 66.4156 38.6777C62.2771 33.9205 55.5314 28.7397 45.6856 28.7397Z"
+                    fill="transparent" />
+            </svg>
+            <nav class="menu">
+                <a href="#Banner">Acessar portfólio</a>
+                <a href="#scroll_sobre">Sobre</a>
+            </nav>
+            <img id="Logo" src="img/Paraludo.png" alt="Logo da empresa Paraludo">
+            <nav class="menu">
+                <a href="#scroll_cases">Cases</a>
+                <a href="#scroll_form">Formulário</a>
+            </nav>
+            <button><img src="img/Eye.png" alt="Mudar tema"></button>
+            <div id="options">
+                    <a href="#Banner">Acessar portfólio</a>
+                    <a href="#scroll_sobre">Sobre</a>
+                    <a href="#scroll_cases">Cases</a>
+                    <a href="#scroll_form">Formulário</a>
+            </div>
+            <button id="menu"><svg width="60" height="58" viewBox="0 0 33 31" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 15H31" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M2 28.5205H31" stroke="white" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M2 2H31" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+        </div>
+    </header>
+    <div id="invisible"></div>
+    <section id="Banner">
+        <div class="container-grid">
+            <img id="Wizz" src="img/Wizzard_of_time_White.png" alt="Título do jogo Wizzard of Time"> <br>
+            <span>Jogue nosso portfólio gamificado</span>
+            <p>Para demonstrar melhor o que somos capazes de fazer, fizemos uma experiência única!
+                <br>
+                <br>
+                Jogue partes dos nossos cases de sucessos, em uma única jogatina com elementos 100% fiéis ao original.
+                <br>
+                <br>
+                Clique Abaixo para Jogar.
+            </p>
+            <div id="scroll_sobre"></div>
+            <button><img src="img/Play.png" alt="Botão play"> Play</button>
+        </div>
+    </section>
+    <section id="Sobre">
+        <div class="container-grid">
+            <h2>Sobre</h2>
+            <p>De um fundo de garagem para o empresarial, nossa empresa surgiu de forma inusitada. O que começou apenas
+                como hobby, se tornou algo maior do que poderíamos imaginar.
+                <br>
+                <br>
+                Nosso primeiro jogo foi uma reinvenção do clássico Metal Slug: Fire’n Guns, que acabou sendo um sucesso
+                total, apresentando mecânicas novas, porém um design que lembra o clássico.
+                <br>
+                <br>
+                Graças a “Fire’n Guns”, arrecadamos dinheiro o suficiente para fazer o primeiro jogo com uma equipe
+                grande: The Tales of Plague, que mais uma vez, foi um tremendo sucesso, se tornando, sem dúvida alguma,
+                um dos clássicos da empresa.
+                <br>
+                <br>
+                Finalmente, compramos um prédio para chamar de nosso, e montamos nosso 1° estúdio em São Paulo, e
+                fizemos um jogo para arrecadar fundos para algo maior, mas não esperávamos que estourasse também.
+                Mythology of War (MOW para os mais íntimos) foi um jogo que, por mais que simples, conseguiu prender o
+                público.
+                <br>
+                <br>
+                Hoje, ainda criamos jogos com o mesmo amor e carinho de sempre, mas agora, faremos jogo que superem cada
+                vez mais a sua expectativa. Expandimos nossos horizontes e fazemos gamificação empresarial.
+            <div id="scroll_cases"></div>
+            </p>
+        </div>
+    </section>
+    <section id="Cases">
+        <div class="container-grid">
+            <h2>Cases</h2>
+            <div id="WTTT">
+                <img id="imgCases" src="img/WayToTheTop.png" alt="Imagem do jogo 'Way to the top'">
+                <p><span>A way to the top</span>
+                    <br>
+                    <br>
+                    “A way to the top” foi um jogo que fizemos para arrecadar fundos para uma causa maior, tendo mais
+                    de 500 000 cópias vendidas. Depois de 3 meses, abrimos uma votação em nossas redes sociais, onde
+                    vocês decidiram para onde ia 75% desse dinheiro. A decisão popular fez mais de 100 mil reais irem
+                    para a causa CEDAI
+                </p>
+            </div>
+            <div id="KBS">
+                <p><span>Kissed by Shadows</span>
+                    <br>
+                    <br>
+                    Kissed By Shadows foi o jogo que fizemos com os fundos de MOW, e foi o nosso primeiro jogo rogue
+                    like 3D, no qual achávamos que haveria riscos de perder parte do público que gostava do 2D, mas
+                    vocês provaram que estávamos errados. Alcançamos 1 milhão de vendas pela 1° vez na história da
+                    empresa. Somos muito gratos a todos vocês.
+                </p>
+                <img src="img/KissedByShadows.png" alt="Imagem do jogo 'Kissed by Shadows'">
+            </div>
+            <div id="DOTML">
+                <img src="img/DaughterOfMoonlight.png" alt="Imagem do jogo 'Daughter of Moonlight'">
+                <p><span>Daughter of Moonlight</span>
+                    <br>
+                    <br>
+                    Daughter of the Moonlight foi o primeiro título que fizemos com nosso maior estúdio, que conta
+                    com 150 funcionários que trabalharam em cada um dos processos do jogo, desde do processo de sketch,
+                    até a dublagem. Com mais de 700 mil vendas, conseguimos fazer com que fosse um jogo que todos
+                    amassem, e com tanto sucesso, estamos a caminho de fazer o primeiro filme baseado no título.
+                </p>
+            </div>
+        </div>
+        <div id="scroll_form"></div>
+    </section>
+    </footer>
+    <section id="Contato">
+        <div class="container-grid">
+            <h2>Contate-nos!</h2>
+            <p>Abaixo, fizemos um formulário para quem deseja contatar nossos serviços. Nossa equipe lhe
+                responderá o
+                mais breve possível.</p>
+            <form>
+                <h2>Formulário de contato</h2>
+                <div class="campo">
+                    <span>Nome</span>
+                    <input title="contato" type="text" placeholder="Digite seu nome...">
+                </div>
+                <div class="campo">
+                    <span>Email</span>
+                    <input title="contato" type="email" placeholder="Digite seu email...">
+                </div>
+                <div class="campo_textarea">
+                    <span>Motivo de Contato</span>
+                    <textarea title="contato" type="text"
+                        placeholder="Digite um pouco sobre sua empresa e o motivo do contato..."></textarea>
+                </div>
+                <button>Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container-grid">
+            <img id="favicon" src="img/AL.png" alt="Logo Paraludo">
+            <div id="redes_sociais">
+                <span>Estamos também nas redes sociais</span>
+                <div id="icones">
+                    <a href="#">
+                        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg width="50px" height="50px" viewBox="0 0 20 20" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <title>instagram [#167]</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs>
+
+                            </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)"
+                                    fill="currentColor">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path
+                                            d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792"
+                                            id="instagram-[#167]">
+
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg width="60px" height="60px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg"
+                            fill="none">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
+                                d="m68 138-8 16c-10.19-4.246-20.742-8.492-31.96-15.8-3.912-2.549-6.284-6.88-6.378-11.548-.488-23.964 5.134-48.056 19.369-73.528 1.863-3.334 4.967-5.778 8.567-7.056C58.186 43.02 64.016 40.664 74 39l6 11s6-2 16-2 16 2 16 2l6-11c9.984 1.664 15.814 4.02 24.402 7.068 3.6 1.278 6.704 3.722 8.567 7.056 14.235 25.472 19.857 49.564 19.37 73.528-.095 4.668-2.467 8.999-6.379 11.548-11.218 7.308-21.769 11.554-31.96 15.8l-8-16m-68-8s20 10 40 10 40-10 40-10" />
+                            <ellipse cx="71" cy="101" fill="currentColor" rx="13" ry="15" />
+                            <ellipse cx="121" cy="101" fill="currentColor" rx="13" ry="15" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg width="60px" height="60px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg width="50px" height="50px" viewBox="0 0 20 20" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <title>linkedin [#161]</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs>
+
+                            </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-180.000000, -7479.000000)"
+                                    fill="currentColor">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path
+                                            d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z"
+                                            id="linkedin-[#161]">
+
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <img id="DB" src="img/DaughterBanner.png" alt="Banner do jogo Daughter Of Moon light">
+        </div>
+
+    </footer>
+</body>
+
+</html>
