@@ -122,6 +122,10 @@ header button img:hover {
     display: none;
 }
 
+#iconeBars {
+    display: none;
+}
+
 #Banner {
 
     height: 72%;
@@ -472,6 +476,10 @@ footer .container-grid {
 
     margin-bottom: 59px;
     margin-left: 300px;
+}
+
+.menu_fechado {
+    display: none;
 }
 
 @media screen and (max-width: 1600px) {

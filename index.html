@@ -15,6 +15,7 @@
         rel="stylesheet">
     <title>Paraludo</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -51,19 +52,25 @@
             </nav>
             <button><img src="img/Eye.png" alt="Mudar tema"></button>
             <div id="options">
-                    <a href="#Banner">Acessar portfólio</a>
-                    <a href="#scroll_sobre">Sobre</a>
-                    <a href="#scroll_cases">Cases</a>
-                    <a href="#scroll_form">Formulário</a>
+                <a href="#Banner">Acessar portfólio</a>
+                <a href="#scroll_sobre">Sobre</a>
+                <a href="#scroll_cases">Cases</a>
+                <a href="#scroll_form">Formulário</a>
             </div>
-            <button id="menu"><svg width="60" height="58" viewBox="0 0 33 31" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 15H31" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M2 28.5205H31" stroke="white" stroke-width="3" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                <path d="M2 2H31" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-        </button>
+            <button id="menu" onclick="AbrirFecharMenu()">
+                <svg id="iconeBars" width="60" height="58" viewBox="0 0 33 31" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 15H31" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M2 28.5205H31" stroke="white" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M2 2H31" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg id="iconeX" width="60" height="58"     xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill="#ffffff"
+                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                </svg>
+            </button>
         </div>
     </header>
     <div id="invisible"></div>
