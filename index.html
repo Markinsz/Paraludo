@@ -50,12 +50,13 @@
                 <a href="#scroll_cases">Cases</a>
                 <a href="#scroll_form">Formulário</a>
             </nav>
-            <button><img src="img/Eye.png" alt="Mudar tema"></button>
+            <button onclick="NextTheme()" class="Tema"><img src="img/Eye.png" alt="Mudar tema"></button>
             <div id="options">
                 <a href="#Banner">Acessar portfólio</a>
                 <a href="#scroll_sobre">Sobre</a>
                 <a href="#scroll_cases">Cases</a>
                 <a href="#scroll_form">Formulário</a>
+                <button class="Tema"><img src="img/Eye.png" alt="Mudar tema"></button>
             </div>
             <button id="menu" onclick="AbrirFecharMenu()">
                 <svg id="iconeBars" width="60" height="58" viewBox="0 0 33 31" fill="none"
@@ -164,22 +165,22 @@
             <p>Abaixo, fizemos um formulário para quem deseja contatar nossos serviços. Nossa equipe lhe
                 responderá o
                 mais breve possível.</p>
-            <form>
+            <form onsubmit="Contato()">
                 <h2>Formulário de contato</h2>
                 <div class="campo">
                     <span>Nome</span>
-                    <input title="contato" type="text" placeholder="Digite seu nome...">
+                    <input id="campo_nome" title="contato" type="text" placeholder="Digite seu nome...">
                 </div>
                 <div class="campo">
                     <span>Email</span>
-                    <input title="contato" type="email" placeholder="Digite seu email...">
+                    <input id="campo_email" title="contato" type="email" placeholder="Digite seu email...">
                 </div>
                 <div class="campo_textarea">
                     <span>Motivo de Contato</span>
-                    <textarea title="contato" type="text"
+                    <textarea id="campo_descricao" title="contato" type="text"
                         placeholder="Digite um pouco sobre sua empresa e o motivo do contato..."></textarea>
                 </div>
-                <button>Enviar</button>
+                <button type="submit">Enviar</button>
             </form>
         </div>
     </section>

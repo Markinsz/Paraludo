@@ -482,6 +482,10 @@ footer .container-grid {
     display: none;
 }
 
+.dark {
+    color: #131921;
+}
+
 @media screen and (max-width: 1600px) {
     #Banner {
         background-image: linear-gradient(rgba(72, 11, 28, 0.4) 0%, rgba(72, 11, 28, 0.5) 10%, rgba(72, 11, 28, 0.7) 20%, rgb(72, 11, 28) 50%, rgb(72, 11, 28) 100%), url(img/BannerCell.gif);
@@ -538,14 +542,21 @@ footer .container-grid {
         flex-direction: column;
         justify-content: space-evenly;
 
+        position: absolute;
+
         padding: 0px 30px;
 
         height: 500px;
         width: 350px;
 
         margin-top: 350px;
+        margin-left: 525px;
 
         background-color: #000000f0;
+    }
+
+    #Logo {
+        position: absolute;
     }
 
     nav.menu {
@@ -602,6 +613,17 @@ footer .container-grid {
     }
 }
 
+@media screen and (max-width: 1300px) {
+    header button {
+        z-index: 2;
+    }
+    
+    #options {
+        margin-left: 425px; 
+    }
+    
+}
+
 @media screen and (max-width: 1100px) {
 
     h2 {
@@ -616,17 +638,21 @@ footer .container-grid {
         font-size: 12px;
     }
 
+    header button {
+        width: auto;
+    }
+
+    #options {
+        width: 100%;
+    }
+
     #options a {
         font-size: 12px;
     }
 
     header {
         height: 20%;
-    }
-
-    header svg:last-child {
-        width: 40%;
-    }
+    }   
 
     #Logo {
         width: 30%;
@@ -763,6 +789,13 @@ footer .container-grid {
 
     #Logo {
         width: 40%;
+    }
+
+    #options {
+        margin-left: 0;
+        margin-top: 300px;
+
+        width: 100%;
     }
 
     #Banner {
