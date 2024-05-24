@@ -79,7 +79,7 @@ header button {
     background-color: unset;
     border: none;
 
-    width: 25%;
+    width: auto;
 
     cursor: pointer;
     transition: content 500ms ease;
@@ -563,6 +563,11 @@ footer .container-grid {
         display: none;
     }
 
+    header button {
+        position: absolute;
+        margin-left: 900px;
+    }
+
     header button img {
         display: none;
     }
@@ -619,7 +624,7 @@ footer .container-grid {
     }
     
     #options {
-        margin-left: 425px; 
+        margin-left: 500px; 
     }
     
 }
@@ -640,6 +645,7 @@ footer .container-grid {
 
     header button {
         width: auto;
+        margin-left: 800;
     }
 
     #options {
@@ -778,13 +784,17 @@ footer .container-grid {
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
     header {
         width: 100%;
     }
 
     header svg:last-child {
         width: 150%;
+    }
+
+    header button {
+        margin-left: 650;
     }
 
     #Logo {
@@ -794,7 +804,12 @@ footer .container-grid {
     #options {
         margin-left: 0;
         margin-top: 300px;
+        padding-left: 100;
 
+        width: 100%;
+    }
+
+    #options a {
         width: 100%;
     }
 
@@ -857,9 +872,21 @@ footer .container-grid {
     }
 }
 
-@media screen and (max-width: 550px) {
-    #Banner {
-        height: 80%;
+@media screen and (max-width: 800px) {
+    header button {
+        margin-left: 550;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header button {
+        margin-left: 500;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header button {
+        margin-left: 450;
     }
 }
 
@@ -888,6 +915,24 @@ footer .container-grid {
     }
 }
 
+@media screen and (max-width: 600px) {
+    header button {
+        margin-left: 400;
+    }
+}   
+
+@media screen and (max-width: 550px) {
+    #Banner {
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header button {
+        margin-left: 325;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .container-grid {
         max-width: 300px;
@@ -899,6 +944,10 @@ footer .container-grid {
 
     header svg:last-child {
         width: 50px;
+    }
+
+    header button {
+        margin-left: 250;
     }
 
     #Banner span {
